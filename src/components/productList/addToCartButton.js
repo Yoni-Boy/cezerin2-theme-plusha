@@ -23,7 +23,7 @@ const AddToCartButton = ({
 		buttonStyle.color = themeSettings.button_addtocart_color;
 	}
 
-	let seeMoreText = 'Подробнее';
+	let seeMoreText = 'Details';
 
 
 	const addToCartText =
