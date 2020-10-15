@@ -28,10 +28,11 @@ const ItemPrice = ({ product, settings }) => {
 	let { price } = product;
 
 	if (Lscache.get('auth_data')) {
-		price *= 0.7;
+		// price *= 0.7;
 	}
 
-	if (product.on_sale || Lscache.get('auth_data')) {
+	// if (product.on_sale || Lscache.get('auth_data')) {
+	if (product.on_sale) {
 		return (
 			<div className="products__price">
 				<del className="products__price_old product-old-price">
